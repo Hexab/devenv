@@ -1,15 +1,27 @@
 package gg.lark.devenv.feature;
 
-public abstract class Feature {
+import gg.lark.devenv.DevEnvPlugin;
+import org.bukkit.plugin.java.JavaPlugin;
+
+public interface Feature {
 
     /**
      * Enables the feature
      */
-    public abstract void enable();
+    void enable();
 
     /**
      * Disables the feature
      */
-    public abstract void disable();
+    void disable();
+
+    /**
+     * Gets the instance of the plugin that this is running on (kinda)
+     *
+     * @return the instance of the plugin
+     */
+    default JavaPlugin getPlugin() {
+        return JavaPlugin.getPlugin(DevEnvPlugin.class);
+    }
 
 }
