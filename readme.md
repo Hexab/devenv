@@ -10,4 +10,4 @@ This plugins aims to provide a better development environment in-game by disabli
 All features can be toggled on / off in game with the `/dev` command
 
 # Download
-This plugin will be built by a CI, a link with the latest version will be placed around here, at some point.
+This plugin will be built by Github's CI, a link with the latest version will be placed around here, at some point.
