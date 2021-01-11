@@ -1,5 +1,6 @@
 package gg.lark.devenv.feature.impl;
 
+import gg.lark.devenv.DevEnvPlugin;
 import gg.lark.devenv.feature.Feature;
 import org.bukkit.Bukkit;
 import org.bukkit.event.EventHandler;
@@ -17,7 +18,7 @@ public class NoHungerFeature implements Feature {
     };
 
     public void enable() {
-        Bukkit.getServer().getPluginManager().registerEvents(this.listener, this.getPlugin());
+        Bukkit.getServer().getPluginManager().registerEvents(this.listener, DevEnvPlugin.getPlugin());
     }
 
     public void disable() {
