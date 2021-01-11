@@ -26,5 +26,5 @@ jobs:
     - name: Upload artifact
       uses: actions/upload-artifact@v1
       with:
-        name: devenv.jar
+        name: devenv
         path: target/devenv-1.0-SNAPSHOT.jar
