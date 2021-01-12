@@ -8,7 +8,7 @@ import java.util.List;
 
 public abstract class Feature {
 
-    public static List<Feature> features = Arrays.asList(new NoHungerFeature(), new NoDamageFeature());
+    public static final List<Feature> features = Arrays.asList(new NoHungerFeature(), new NoDamageFeature());
 
     public boolean enabled = true;
 
