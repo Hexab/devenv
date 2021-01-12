@@ -31,7 +31,7 @@ public class NoCreaturesFeature extends Feature {
 
     @Override
     public String getName() {
-        return "nocreaturessss";
+        return "nocreatures";
     }
 
 }
