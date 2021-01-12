@@ -1,15 +1,22 @@
 package gg.lark.devenv.feature;
 
-public interface Feature {
+public abstract class Feature {
 
     /**
      * Enables the feature
      */
-    void enable();
+    abstract public void enable();
 
     /**
      * Disables the feature
      */
-    void disable();
+    abstract public void disable();
+
+    /**
+     * Gets the name of the feature
+     *
+     * @return the name
+     */
+    abstract public String getName();
 
 }
