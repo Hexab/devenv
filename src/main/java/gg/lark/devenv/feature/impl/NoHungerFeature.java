@@ -8,7 +8,7 @@ import org.bukkit.event.HandlerList;
 import org.bukkit.event.Listener;
 import org.bukkit.event.entity.FoodLevelChangeEvent;
 
-public class NoHungerFeature implements Feature {
+public class NoHungerFeature extends Feature {
 
     private final Listener listener = new Listener() {
         @EventHandler
@@ -17,12 +17,19 @@ public class NoHungerFeature implements Feature {
         }
     };
 
+    @Override
     public void enable() {
         Bukkit.getServer().getPluginManager().registerEvents(this.listener, DevEnvPlugin.getPlugin());
     }
 
+    @Override
     public void disable() {
         HandlerList.unregisterAll(this.listener);
+    }
+
+    @Override
+    public String getName() {
+        return "nohunger";
     }
 
 }
