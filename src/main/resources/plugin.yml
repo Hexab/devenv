@@ -3,3 +3,7 @@ version: '1.0.0'
 author: 'pcranaway'
 main: 'gg.lark.devenv.DevEnvPlugin'
 description: 'A more friendly environment for development'
+commands:
+  dev:
+    description: 'Manages the DevEnv plugin'
+    permission: devenv.developer
