@@ -2,6 +2,8 @@ package gg.lark.devenv.feature;
 
 public abstract class Feature {
 
+    public boolean enabled = true;
+
     /**
      * Enables the feature
      */
