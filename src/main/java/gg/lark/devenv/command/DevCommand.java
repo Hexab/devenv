@@ -85,7 +85,9 @@ public class DevCommand implements CommandExecutor, TabCompleter {
     }
 
     private void listFeatures(CommandSender sender) {
-        Feature.features.forEach(feature -> sender.sendMessage("- " + ChatColor.YELLOW + feature.getName()));
+        Feature.features.forEach(feature -> {
+            sender.sendMessage("- " + (feature.enabled ? ChatColor.GREEN : ChatColor.RED) + feature.getName());
+        });
     }
 
 }
