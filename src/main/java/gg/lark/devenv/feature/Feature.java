@@ -1,5 +1,6 @@
 package gg.lark.devenv.feature;
 
+import gg.lark.devenv.feature.impl.NoDamageFeature;
 import gg.lark.devenv.feature.impl.NoHungerFeature;
 
 import java.util.Arrays;
@@ -7,7 +8,7 @@ import java.util.List;
 
 public abstract class Feature {
 
-    public static List<Feature> features = Arrays.asList(new NoHungerFeature());
+    public static List<Feature> features = Arrays.asList(new NoHungerFeature(), new NoDamageFeature());
 
     public boolean enabled = true;
 
